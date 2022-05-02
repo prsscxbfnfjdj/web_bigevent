@@ -47,7 +47,7 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
-                    <a href="javascript:;">
+                    <a href="javascript:;" id="btn_ogout">
                         <i class="layui-icon ">
                             <span class="iconfont icon-tuichu"></span>
                             退出</i>
@@ -62,12 +62,12 @@
                 <div class="userinfo">
                     <img src="./assets/images/sample2.jpg" class="layui-nav-img">
                     <span class="text-avatar">A</span>
-                    <span class="welcome">欢迎***</span>
+                    <span id="welcome">欢迎***</span>
                 </div>
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree " lay-shrink="all">
                     <li class="layui-nav-item layui-this">
-                        <a href="/home/dashboard.html" target="fm">
+                        <a href="./home/dashboard.html" target="fm">
                             <span class="iconfont icon-home"></span> 首页
                         </a>
                     </li>
@@ -121,7 +121,7 @@
 
         <div class="layui-body " style="overflow:hidden;">
             <!-- 内容主体区域 -->
-            <iframe src="/home/dashboard.html" name="fm" frameborder="0"></iframe>
+            <iframe name="fm" src="./home/dashboard.html" frameborder="0"></iframe>
         </div>
 
         <div class="layui-footer">
@@ -130,6 +130,9 @@
         </div>
     </div>
     <script src="./assets/lib/layui/layui.all.js"></script>
+    <script src="./assets/lib/jquery.js"></script>
+    <script src="./assets/js/baseAPI.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

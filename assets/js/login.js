@@ -42,7 +42,7 @@ $(function() {
             }
 
             console.log(data)
-            $.post('api/reguser', data,
+            $.post('/api/reguser', data,
                 function(res) {
                     if (res.status !== 0) {
                         return layer.msg(res.message)
@@ -57,7 +57,7 @@ $(function() {
         // 1.阻止默认提交行为
         e.preventDefault()
         $.ajax({
-            url: 'api/login',
+            url: '/api/login',
             method: 'post',
             //获取表单的数据
             data: $(this).serialize(),
